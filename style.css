@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	height: 100vh;
+	max-height: 600px;
+	background-image: url('diver.jpg');
+	background-position: top;
+}
+
+.navWrapper {
+	width: 90%;
+	max-width: 960px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.brand {
+	font-family: 'Lato';
+	color: #fff;
+	font-size: 26px;
+	font-weight: 500;
+}
+
+.mainMenu > li {
+	list-style: none;
+	padding-top: 30px;
+}
+
+.mainMenu > li > a {
+	font-family: 'Lato';
+	color: #fff;
+	font-size: 22px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 520px) {
+	.header {
+		background-size: 100% 100%;
+		background-position: center center;
+	}
+
+	.brand, .mainMenu {
+		display: inline-block;
+	}
+
+	.mainMenu > li {
+		float: left;
+		padding-left: 30px;
+	}
+}
